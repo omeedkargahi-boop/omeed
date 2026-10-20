@@ -48,3 +48,9 @@ def in_range(n):
         return "False"
 
 print(in_range(99))
+
+list = [1,2,3,4,5]
+for num in list:
+    print(num)
+
+def fruits(fruits_list)

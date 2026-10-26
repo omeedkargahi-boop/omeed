@@ -6,6 +6,12 @@
 # to point the telescope at is very important. Let's practice below.
 
 targets = {
+    "Arcturus": {
+        "RA": "14h 15m 39.7s",
+        "Dec": "+19° 10′ 56″",
+        "Magnitude": "-0.05",
+        "Spectral Type": "K1.5III"
+    },
     "Vega": {
         "RA": "18h 36m 56.3s",
         "Dec": "+38° 47′ 01″",
@@ -41,14 +47,35 @@ targets = {
 # --- Questions ---
 # 1) Write a function that uses a loop to print the name of each star.
 
-def star_name(target):
-    for stars in target:
+def star_name(targets):
+    for stars in targets:
         print(stars)
 
 star_name(targets)
 
 # 2) Write a function that uses a loop to print the name of each star with its spectral type.
+
+def star_spectral(target):
+    for stars in target:
+        print(stars, target[stars]["Spectral Type"])
+
+star_spectral(targets)
+
 # 3) Write a function that uses a conditional to find stars with magnitudes greater than 0.1 mag.
+
+def magnitude_sorter(targets):
+    for stars in targets:
+        if targets[stars]["Magnitude"] > 0.1:
+            print(stars)
+
+magnitude_sorter(targets)
+
 # 4) Look up another target, add all the necessary information to the targets list. 
+
 # 5) Write a function that finds the brightest star whose Declination is closest to 20°.
+
+def 
+
+
 # 6) What is your favorite constellation?
+# Prolly Orion because I like his belt

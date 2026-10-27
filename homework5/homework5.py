@@ -92,6 +92,8 @@ print(duplicatelist(letters))
 def square(num): # The function was missing a colon
     return num * num
 
+print(square(11))
+
 
 # --- 6.2 My Favorite Function ---
 
